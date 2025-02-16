@@ -20,7 +20,14 @@ import * as logger from "firebase-functions/logger";
 
 // Authentificationのトリガー関数をインポート
 
-import * as onUserCreated from "./triggers/onUserCreated";
-import * as onUserDeleted from "./triggers/onUserDeleted";
+import * as onAuthUserTriggers from "./triggers/authUserTriggers";
+import * as onLikeUserTriggers from "./triggers/likeUserTriggers";
+import * as onPostTriggers from "./triggers/postTriggers";
+import * as onUserTriggers from "./triggers/userTriggers";
 
-export { onUserCreated, onUserDeleted };
+export {
+  onAuthUserTriggers,
+  onLikeUserTriggers,
+  onPostTriggers,
+  onUserTriggers,
+};
